@@ -5,13 +5,732 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
+  }
+  
+  li:nth-child(3) {
+  display: none;
+  }
 
-  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
 }
+  /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+
+
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+ @media (min-width: 768px) AND (max-width: 1023px) {
+  li:nth-child(1){
+    display: none;
+  }
+  li:nth-child(2){
+    display: none;
+  }
+  li:nth-child(3){
+    display: none;
+  }
+  li:nth-child(4){
+    display: none;
+  }
+
+   * {  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   } 
+
+  body {
+    max-width: 768px;
+ 
+  }  
+
+  
+  .content {
+    max-width: 768px;
+    padding: 0 30px;
+    margin:0 auto;
+  }
+
+  .content.header-content {
+    width: 768px;
+    width: 100%;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px;
+    position: fixed;
+    top: 0;
+    background: white;
+  }
+
+/* desktop view do not touch */
+  .content.content-vertical.portfolio-content {
+    width: 708px;
+    width: 100%;
+    /* margin-top: 70px; */
+    padding: 0px 30px;
+    padding-top: 70px;
+    margin: 0;
+    gap: 0;
+  }
+
+ /* .content p.subtext {
+  width: 708px;
+  padding: 0;
+ } */
+
+
+  .section-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 708px;
+  padding: 80px 0 60px 0;
+  height: 320px;
+  gap: 14px;
+}
+
+.portfolio-content{
+  padding:0px;
+}
+.teammates-content {
+  gap: 0px;
+  margin: 0px;
+}
+
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.portfolio-img-wrapper {
+  display: flex;
+  width: 200px;
+}
+
+.portfolio-img-wrapper img {
+  width: 200px;
+  height: 140px;
+}
+
+.portfolio-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portfolio-item-info .item-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f1f1f;
+  padding-top: 10px;
+}
+
+.portfolio-item-info .item-description {
+  font-size: 14px;
+  color: #969696;
+  line-height: 24px;
+  width: 478px;
+}
+
+/* teammate section */
+
+ .teammates-list:before {
+  justify-content: flex-start;
+  content: "\003C";
+  display: none;
+} 
+
+ .teammates-list:after { 
+  justify-content: flex-end;
+  content: "\003E";
+  display: none;
+} 
+
+.teammates-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.teammate {
+  width: 334px;
+  height: 324px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.teammate-img-wrapper {
+ width: 334px;
+}
+
+.teammate-img-wrapper img {
+  width: 334px;
+  height: 230px;
+}
+
+
+.teammates-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 768px;
+  height: 1496px;
+  gap: 30px;
+}
+
+.teammate-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} 
+
+.teammate-info {
+  align-items: center;
+}
+
+.teammate-social-icons {
+  width: 80px;
+  height:20px;
+  gap: 10px;
+}
+
+.teammate-social-icons > div {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(150, 150, 150, 1);
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 10px;
+}
+ footer .social-icons div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 130px;
+  text-transform: uppercase;
+  font-size: 14px;
+ }
+
+
+footer .social-icons span {
+  display: none;
+}
+
+footer .social-icons div {
+  width: auto;
+}
+
+footer .social-icons .icon {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+
+/* section body {
+  width: 768px;
+} */
+ 
+
+/* footer section */
+
+.footer-content {
+  gap: 30px;
+}
+  
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin: 0 auto; */
+  padding-top: 80px;
+  padding-bottom: 60px;
+  width: 100%;
+  height: 366px;
+}
+
+.footer-contacts > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 339px;
+}
+
+.footer-contacts h3 {
+  color: white;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+
+
+.footer-contacts p,
+.footer-contacts h3 {
+  text-align: center;
+  line-height: 24px;
+ 
+  /* color: red; */
+}
+
+.footer-contacts p {
+  width: 182px;
+  height: 72px;
+  text-align: center;
+  color: #969696;
+  font-size: 16px;
+}
+
+.footer-contacts ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer-contacts ul li {
+  text-align: center;
+}
+
+.footer-contacts ul li a {
+  color: #969696;
+  /* color: blue; */
+}
+
+
+.footer-footer {
+  font-size: 12px;
+  line-height: 20px;
+  color: #969696;
+  text-align: center;
+  border-top: 1px solid #2e2e2e;
+  padding-top: 30px;
+}
+
+}
+
+
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+
+@media (max-width: 767px) {
+ 
+ li:nth-child(1){
+    display: none;
+  }
+  li:nth-child(2){
+    display: none;
+  }
+  li:nth-child(3){
+    display: none;
+  }
+  li:nth-child(4){
+    display: none;
+  }
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  min-width: 360px;
+}
+
+ .teammates-list:before {
+  justify-content: flex-start;
+  content: "\003C";
+  display: none;
+} 
+
+.teammates-list:after { 
+  justify-content: flex-end;
+  content: "\003E";
+  display: none;
+} 
+
+
+
+  /* .trigram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:767px;
+    height: 50px;
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 24px;
+  } */
+  
+
+  
+  .content {
+    padding: 0 30px;
+    margin: 0px;
+  }
+
+  .logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+  .logo span {
+    text-transform: none;
+  }
+
+  .content.content-vertical.portfolio-content {
+    width: 360px;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin: 0;
+    gap: 0;
+  } 
+  
+  div.content.header-content {
+    position: fixed;
+    top: 0px;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px;
+    background: white;
+  }
+
+.portfolio-content,
+.teammates-content {
+  padding-top: 80px;
+}
+
+  h1 {
+    width:285px;
+    height: 74px;
+    padding: 0;
+  }
+
+
+
+  .section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    gap: 14px;
+  }
+
+
+  .content h1 {
+    padding: 0;
+  }
+
+  div.section-info p.subtext {
+  width: 314px;
+  height: 144px;
+  padding-left: 0px;
+  padding-right: 0px; 
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .portfolio-item {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .portfolio-item {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.portfolio-item-info .item-description {
+  display: flex;
+  text-align: center;
+  width: 301.33px;
+  font-size: 14px;
+  color: #969696;
+  line-height: 24px;
+}
+
+
+.portfolio-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.portfolio-img-wrapper img {
+  width: 100%;
+}
+
+.portfolio-item-info {
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.content.content-vertical.teammates-content {
+  width: 360px;
+  padding: 0px;
+  padding-top: 0px;
+  margin: 0;
+  gap: 10px;
+}
+
+.surrounded-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: lowercase;
+  width: 100%;
+  height: 40px;
+  gap: 10px;
+  padding: 0px;
+}
+
+h2.surrounded-header {
+  font-size: 40px;
+  color: #969696;
+  text-align: center;
+  text-transform: capitalize;;
+  padding: 30px;
+}
+h2.content {
+  font-size: 40px;
+  padding: 30px;
+}
+
+.teammates-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.teammate {
+  width: 328px;
+  height: 162px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid 1px #969696;
+  padding: 16px;
+  gap: 16px;
+  margin: auto;
+}
+
+
+.teammate-img-wrapper img {
+  width: 130px;
+  height: 130px;
+}
+
+
+.teammates-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  height: 1448px;
+  padding-right:16px;
+  padding-bottom: 40px;
+  padding-left:16px;
+  gap: 16px;
+}
+
+div.teammate-img-wrapper {
+ width: 130px;
+ height:130px;
+}
+
+.teammate-data {
+  width: 140px;
+  height: 92px;
+  display: flex;
+  gap: 24px;
+} 
+
+.teammate-info .teammate-role {
+  color: #969696;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.teammate-info {
+ width: 150px;
+height: 38px;
+}
+
+ .teammate-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f1f1f;
+  text-align: left;
+ }
+
+.teammate-role {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0%;
+ 
+}
+ .teammate-info {
+  align-items: left;
+} 
+
+.teammate-social-icons {
+  width: 92px;
+  height:20px;
+  padding-top: 16px;
+  gap: 16px;
+}
+
+/* social icons */
+
+.teammate-social-icons > div {
+  width: 20px;
+  height: 20px;
+   background-color: rgba(150, 150, 150, 1);
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+/* footer  */
+footer {
+  
+  width: 360px;
+  background: black;
+  color: #969696;
+  padding-top: 30px;
+  padding-right: 16px;
+  padding-bottom: 30px;
+  padding-left: 16px;
+  gap: 24px;
+}
+
+footer .social-icons {
+  width: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  gap: 30px;
+}
+
+footer .social-icons div {
+  display: flex;
+  gap: 10px;
+  width: 130px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* keep */
+footer .social-icons .icon {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+
+/* keep */
+div.content.content-vertical.footer-content {
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+}
+
+
+/* keep */
+div.footer-contacts {
+  display: inline-grid;
+  justify-content: center;
+  gap: 30px;
+  width: 328px;
+  height: 373px;
+}
+
+
+ .footer-contacts p,
+.footer-contacts h3 {
+  text-align: center;
+  line-height: 24px;
+  width: 194px;
+} 
+
+ .footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+} 
+
+ 
+
+}
